@@ -1,7 +1,7 @@
 # Builds the preview page (blackfilms-site.html, for the claude.ai artifact) and the live site (site/index.html for Vercel) from src.html.
 import shutil,os
 D='/mnt/project-files/blackfilms/'
-SITE='https://www.bfcreative.com'
+SITE='https://www.bfcreatives.com'
 FORM='https://formsubmit.co/ajax/mohammed.zia@bfcreatives.com'
 s=open(D+'src.html').read().replace('{{LOGO_LIGHT}}','assets/logo-light.png').replace('{{LOGO_RED}}','assets/logo-red.png')
 open(D+'blackfilms-site.html','w').write(s.replace('{{FORM_ENDPOINT}}',''))
