@@ -2,7 +2,7 @@
 import shutil,os
 D='/mnt/project-files/blackfilms/'
 SITE='https://www.bfcreative.com'
-FORM='https://formsubmit.co/ajax/ziaekbal@gmail.com'
+FORM='https://formsubmit.co/ajax/mohammed.zia@bfcreatives.com'
 s=open(D+'src.html').read().replace('{{LOGO_LIGHT}}','assets/logo-light.png').replace('{{LOGO_RED}}','assets/logo-red.png')
 open(D+'blackfilms-site.html','w').write(s.replace('{{FORM_ENDPOINT}}',''))
 web=s.replace('{{FORM_ENDPOINT}}',FORM)
