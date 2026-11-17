@@ -771,7 +771,7 @@ if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.fo
 
 /* ---------- contact ---------- */
 // Enquiries are delivered by FormSubmit to this address. The first submission sends a one-time activation email to it.
-const FORM_ENDPOINT='https://formsubmit.co/ajax/mohammed.zia@bfcreatives.com';
+const FORM_ENDPOINT='https://formsubmit.co/ajax/ziaekbal@gmail.com';
 document.querySelectorAll('[data-pack]').forEach(a=>a.addEventListener('click',()=>{const sel=document.getElementById('budget');[...sel.options].forEach(o=>{if(o.text.indexOf(a.dataset.pack)===0)sel.value=o.value});const m=document.getElementById('msg');if(!m.value.trim())m.value=`I'm interested in the ${a.dataset.pack} package. `}));
 document.getElementById('copy-email').addEventListener('click',e=>{const btn=e.currentTarget,el=document.getElementById('email-text'),txt=el.textContent;
   const done=()=>{btn.textContent='Copied';setTimeout(()=>btn.textContent='Copy',1600)};
